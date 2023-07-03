@@ -1,29 +1,39 @@
+<template>
+  <c-flex id="app" h="100vh" w="100vw" flexDirection="row">
+
+    <c-flex w="20%" flexDirection="column" bg="gray.700" color="white" p="4">
+      <c-box h="10%">
+        <h3>For you</h3>
+      </c-box>
+      <!-- The remaining space here for the rest of your "For you" content -->
+    </c-flex>
+
+    <c-box flex="1" h="100vh" p="4">
+      <c-flex justifyContent="center" alignItems="center" h="10%">
+        <Aside/>
+      </c-flex>
+      <!-- The remaining space here for the rest of your "Home" content -->
+    </c-box>
+
+    <c-flex w="20%" flexDirection="column" bg="gray.700" color="white" p="4">
+      <c-box h="10%" ml="auto">
+        <h3>Following</h3>
+      </c-box>
+      <!-- The remaining space here for the rest of your "Following" content -->
+    </c-flex>
+
+  </c-flex>
+</template>
+
 <script setup>
-import { CFlex, CBox, CButton,  } from "@chakra-ui/vue";
+import { CFlex, CBox } from "@chakra-ui/vue";
 import Aside from "@/components/Aside.vue";
-components: {
-  Aside
-}
 </script>
 
-<template>
-  <div id="app">
-    <c-flex flex="1" bg="red" w="100vw" h="100%">
-      <c-flex h="100vh" w="30vw" bg="black"><Aside/></c-flex>
-      <c-flex h="100vh" w="40vw" bg="black" color="white" border="solid 2px grey">Home
-        <c-flex flex="1" justify="space-around">
-          <h3>For you</h3>
-          <h3>Following</h3>
-        </c-flex>
-  
-        <c-flex>
-          
-        </c-flex>
-
-      </c-flex>
-      <c-flex h="100vh full" w="30vw" bg="black">Info</c-flex>
-
-    </c-flex>
-  </div>
-
-</template>
+<script>
+export default {
+  components: {
+    Aside
+  }
+}
+</script>
