@@ -7,6 +7,13 @@
     bg="gray.700"
     shadow="lg"
   >
+    <!-- User profile -->
+    <c-box display="flex" alignItems="center" marginBottom="4">
+      <c-avatar size="md" src="/path/to/your/avatar.png" />
+      <c-text ml="3" fontSize="lg" fontWeight="semibold">Username</c-text>
+    </c-box>
+
+    <!-- Navigation -->
     <c-link 
       to="/" 
       display="flex" 
