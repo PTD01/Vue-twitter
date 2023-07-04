@@ -1,25 +1,40 @@
-import Vue from 'vue' import { CFlex, CBox, CButton,CLink,CText } from
-"@chakra-ui/vue";
+<template>
+  <c-box
+    as="aside"
+    w="full"
+    py="5"
+    px="6"
+    bg="gray.700"
+    shadow="lg"
+  >
+    <!-- User profile -->
+    <c-box display="flex" alignItems="center" marginBottom="4">
+      <c-avatar size="md" src="/path/to/your/avatar.png" />
+      <c-text ml="3" fontSize="lg" fontWeight="semibold">Username</c-text>
+    </c-box>
+
+    <!-- Navigation -->
+    <c-link 
+      to="/" 
+      display="flex" 
+      alignItems="center"
+      color="white"
+      py="2"
+    >
+      <c-icon name="home" size="5" color="blue.500"/>
+      <c-text ml="3">Home</c-text>
+    </c-link>
+  </c-box>
+</template>
 
 <script setup>
-new Vue({
-  el: "#aside",
-});
+import { CFlex, CBox } from "@chakra-ui/vue";
+import Aside from "@/components/Aside.vue";
 </script>
 
-<template>
-  <div id="aside">
-    <c-flex flex-dir="column" flex="1">
-      <c-link to="/">
-        <c-flex flex-dir="row">
-          <c-box>
-            <c-text>hfhjutuj</c-text>
-          </c-box>
-          <c-box>
-            <c-text>Home</c-text>
-          </c-box>
-        </c-flex>
-      </c-link>
-    </c-flex>
-  </div>
-</template>
+
+<style scoped>
+c-link:hover {
+  background-color: #718096; /* Equivalent to 'gray.600' in Chakra UI */
+}
+</style>
