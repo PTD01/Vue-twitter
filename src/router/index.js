@@ -7,15 +7,15 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   mode: "history",
-  base: import.meta.env.BASE_URL,
+  base: 'import.meta.env.BASE_URL',
   routes: [
     {
-      path: "/login",
+      path: "/",
       name: "login",
       component: Login
     },
     {
-      path: "/",
+      path: "/home",
       name: "home",
       component: App
     }

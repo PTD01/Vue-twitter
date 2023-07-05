@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-  import { CFlex, CBox, CText } from "@chakra-ui/vue";
+  import { CFlex} from "@chakra-ui/vue";
 </script>
 
 <script>
