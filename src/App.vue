@@ -38,13 +38,17 @@
 
 
 <script setup>
-import { CFlex, CBox } from "@chakra-ui/vue";
+import { CFlex, CBox, CText } from "@chakra-ui/vue";
 import Aside from "@/components/Aside.vue";
 </script>
 
 <script>
 export default {
   components: {
+    Aside,
+    CFlex,
+    CBox,
+    CText,
     Aside
   }
 }

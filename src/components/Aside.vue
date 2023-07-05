@@ -28,8 +28,20 @@
 </template>
 
 <script setup>
-import { CFlex, CBox } from "@chakra-ui/vue";
-import Aside from "@/components/Aside.vue";
+import { CFlex, CBox, CText, CLink, CIcon, CAvatar } from "@chakra-ui/vue";
+</script>
+
+<script>
+export default {
+  components: {
+    CBox,
+    CText,
+    CLink,
+    CIcon,
+    CFlex,
+    CAvatar
+  }
+}
 </script>
 
 
